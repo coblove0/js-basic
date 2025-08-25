@@ -1,10 +1,10 @@
 const language = prompt('Введите свой язык (de, en, ru)');
 
 switch (language.toLowerCase()) {
-    case 'de': 'Gutten tag!';
+    case 'de': console.log('Gutten tag!');
                 break;
-    case 'en': 'Good Morning!';
+    case 'en':  console.log('Good Morning!');
                 break;
     case 'ru':
-    default:    'Добрый день!';
+    default:    console.log('Добрый день!');
 }
