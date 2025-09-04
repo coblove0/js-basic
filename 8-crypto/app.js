@@ -13,10 +13,12 @@ function crypto (password) {
 }
 
 function check (chekingPass, secretPass) {
-    if (crypto(chekingPass) === secretPass) {
+    if (crypto(secretPass) === chekingPass) {
         console.log('Password is correct!');
+        return true;
     } else {
         console.log('Password is incorrect!');
+        return false;
     }
 }
 
