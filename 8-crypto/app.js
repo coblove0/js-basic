@@ -13,7 +13,7 @@ function crypto (password) {
 }
 
 function check (secretPass, chekingPass) {
-    if (crypto(secretPass) === chekingPass) {
+    if (crypto(chekingPass) === secretPass) {
         console.log('Password is correct!');
         return true;
     } else {
@@ -24,4 +24,4 @@ function check (secretPass, chekingPass) {
 
 const secretPass = crypto(password);
 const chekingPass = prompt('Enter password.');
-check(chekingPass, secretPass);
+check(secretPass, chekingPass);
