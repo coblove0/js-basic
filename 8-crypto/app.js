@@ -12,7 +12,7 @@ function crypto (password) {
     return end + begin;
 }
 
-function check (chekingPass, secretPass) {
+function check (secretPass, chekingPass) {
     if (crypto(secretPass) === chekingPass) {
         console.log('Password is correct!');
         return true;
