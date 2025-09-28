@@ -34,26 +34,16 @@
           </div>
         </div>
       </header>
-      <main>
-        <div>
+      <main class="main">
+        <div id="days"></div>
           <div class="habit">
-            <div class="habit__day">День 1</div>
-            <div class="habit__comment">Первый подход всегда даётся тяжело</div>
-            <button class="habit__delete">
-              <img src="./images/delete.svg" alt="Кнопка удаления">
-            </button>
-          </div>
-        </div>
-        <div>
-          <div class="habit">
-            <div class="habit__day">День 2</div>
-            <form class="habit__form">
-              <input class="input_icon" type="text" placeholder="Комментарий">
+            <div class="habit__day">День _</div>
+            <form class="habit__form" onsubmit="addDays(event)">
+              <input name="comment" class="input_icon" type="text" placeholder="Комментарий">
               <img class="input__icon" src="./images/comment.svg" alt="Иконка комментария">
-              <button class="button">Готово</button>
+              <button class="button" type="submit">Готово</button>
             </form>
           </div>
-        </div>
       </main>
     </div>
   </div>
