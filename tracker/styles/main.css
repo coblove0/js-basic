@@ -244,9 +244,9 @@ input.error {
   justify-content: center;
 }
 
-/* .cover_hidden {
+.cover_hidden {
   display: none;
-} */
+}
 
 .popup {
   border-radius: 10px;
